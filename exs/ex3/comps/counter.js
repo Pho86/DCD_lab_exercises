@@ -39,11 +39,11 @@ c_template.innerHTML = `
         }
     </style>
     <div class="counter">
-        <button id="d_but">-</button>
-        <div id="number">0</div>
-        <button id="i_but">+</button>
+        <button class="d_but">-</button>
+        <div class="number">0</div>
+        <button class="i_but">+</button>
     </div>
-    <div id="bar"></div> 
+    <div class="bar"></div> 
 `;
 
 class TheCounter extends HTMLElement {
