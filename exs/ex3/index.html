@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Component 1</title>
+        <style> 
+        body {
+            width: 100vw;
+            height:100vh; 
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        </style>
+    </head>
+    <body>
+        <style>
+            .counter {
+                background-color: wheat;
+                display:flex;
+                border-radius: 10%;
+                padding: 0.2rem;
+            }
+            .counter > button {
+                width: 2vw;
+                height: 2vh;
+                border: none;
+                border-radius: 1rem;
+                background-color: royalblue;
+            }
+            .counter > div {
+                flex:1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.2rem;
+                
+            }
+
+            .bar {
+                width:0px;
+                height: 15px;
+                background-color: seagreen;
+            }
+        </style>
+        <div class="counter">
+            <button onclick="decrease()">-</button>
+            <div>0</div>
+            <button onclick="increase()">+</button>
+        </div>
+       <div class="bar"></div> 
+        <script>
+            var num = 0;
+                
+            function decrease() {
+                num = num - 1;
+                document.querySelector(".counter > div").innerText = num;
+                document.querySelector(".bar").style.width = (num*10)+"px";
+            }
+
+            function increase() {
+                num = num + 1;
+                document.querySelector(".counter > div").innerText = num;
+                document.querySelector(".bar").style.width = (num*10)+"px";
+            }
+            
+        </script>
+    </body>
+    
+</html>
