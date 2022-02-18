@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Understanding Data Flow</title>
+    <script src="comps/gamemenu.js"></script>
+    <script src="comps/gamebg.js"></script>
+    <script src="comps/particles.js"></script>
+  </head>
+
+  <body>
+    <game-menu
+    name='desert'
+    onclick=changeBG(1)>
+  </game-menu>
+  <game-menu
+    name='forest'
+    onclick=changeBG(2)>
+  </game-menu>
+  <game-menu
+    name='snow'
+    onclick=changeBG(3)>
+  </game-menu>
+  <game-menu
+    name='valley'
+    onclick=changeBG(4)>
+  </game-menu>
+    <game-bg 
+    id='gamebg'>
+  </game-bg>
+  <game-particles
+  id='gamepar'></game-particles>
+  </body>
+</html>
